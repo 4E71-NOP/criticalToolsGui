@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="PrincipalId" minHeight="360.0" minWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.criticalToolsGui.ihm.CriticalToolsGuiController">
+	<children>
+		<TabPane tabClosingPolicy="UNAVAILABLE" tabMinWidth="128.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<tabs>
+				<Tab fx:id="Tab01" text="Système">
+					<content>
+						<AnchorPane minHeight="256.0" minWidth="128.0">
+							<children>
+								<GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="128.0" minWidth="128.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="128.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="128.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<Button fx:id="Tab01ButtonA01" minWidth="160.0" mnemonicParsing="false" onAction="#Tab01ButtonA01Action" text="getAllInformation()" />
+										<Label fx:id="Tab01LabelA02" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #00000080; -fx-background-color: #00000010;" text="..." wrapText="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+											<padding>
+												<Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+											</padding>
+										</Label>
+										<Button fx:id="Tab01ButtonB01" minWidth="160.0" mnemonicParsing="false" onAction="#Tab01ButtonB01Action" text="Réinitialisation" GridPane.columnIndex="1" />
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</GridPane>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="Tab02" text="Hardware">
+					<content>
+						<AnchorPane minHeight="256.0" minWidth="128.0">
+							<children>
+								<GridPane hgap="10.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="128.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="256.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="24.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="24.0" valignment="TOP" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<Label text="VendorId" GridPane.rowIndex="1" />
+										<Label text="ModelName" GridPane.rowIndex="2" />
+										<Label text="Nombre de CPU" GridPane.rowIndex="3" />
+										<Label text="Taille cache" GridPane.rowIndex="4" />
+										<Label text="Drapeaux" GridPane.rowIndex="5" />
+										<Label text="Dernière mesure des Fréquences" GridPane.rowIndex="6" />
+										<Label fx:id="Tab02LabelB02" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+										<Label fx:id="Tab02LabelB03" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+										<Label fx:id="Tab02LabelB04" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+										<Label fx:id="Tab02LabelB05" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+										<Label fx:id="Tab02LabelB06" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+										<Label fx:id="Tab02LabelB07" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="..." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS" />
+										<Button fx:id="Tab02ButtonA01" minWidth="160.0" mnemonicParsing="false" onAction="#Tab02ButtonA01Action" text="getCpuInformations()" />
+										<Button fx:id="Tab02ButtonB01" minWidth="160.0" mnemonicParsing="false" onAction="#Tab02ButtonB01Action" text="Réinitialiser" GridPane.columnIndex="1" />
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</GridPane>
+                        <Circle fx:id="Tab02Circle01" blendMode="SRC_ATOP" centerX="410.0" centerY="150.0" fill="TRANSPARENT" radius="32.0" strokeDashOffset="10.0" strokeLineCap="BUTT" strokeWidth="8.0" visible="false" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="370.0" AnchorPane.topAnchor="110.0">
+                           <rotationAxis>
+                              <Point3D x="2.0" y="0.5" z="1.0" />
+                           </rotationAxis>
+                           <cursor>
+                              <Cursor fx:constant="WAIT" />
+                           </cursor>
+                           <stroke>
+                              <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#12010100" />
+                                    <Stop color="#12010100" offset="0.5222222222222223" />
+                                    <Stop color="#009cf7" offset="0.7000000000000002" />
+                                    <Stop color="#009cf7" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Circle>
+                        <Circle fx:id="Tab02Circle02" blendMode="SRC_ATOP" centerX="410.0" centerY="150.0" fill="TRANSPARENT" layoutX="6.0" layoutY="6.0" radius="32.0" strokeDashOffset="10.0" strokeLineCap="BUTT" strokeWidth="8.0" visible="false" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="370.0" AnchorPane.rightAnchor="370.0" AnchorPane.topAnchor="110.0">
+                           <cursor>
+                              <Cursor fx:constant="WAIT" />
+                           </cursor>
+                           <stroke>
+                              <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#f70000a5" />
+                                    <Stop color="#f70000a5" offset="0.3851851851851852" />
+                                    <Stop color="#12010100" offset="0.5037037037037039" />
+                                    <Stop color="#12010100" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Circle>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="Tab03" text="Conversion">
+					<content>
+						<AnchorPane minHeight="256.0" minWidth="128.0">
+							<children>
+								<GridPane hgap="10.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="64.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="64.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="64.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="64.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="64.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints maxHeight="24.0" minHeight="24.0" valignment="BOTTOM" vgrow="NEVER" />
+										<RowConstraints maxHeight="24.0" minHeight="24.0" valignment="BOTTOM" vgrow="NEVER" />
+										<RowConstraints maxHeight="32.0" minHeight="24.0" vgrow="NEVER" />
+										<RowConstraints minHeight="24.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<Label text="Expression" GridPane.rowIndex="1" />
+										<Label text="Entrée" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+										<Label text="Résultat" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+										<Label text="Sortie" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+										<Button fx:id="Tab03ButtonD03" mnemonicParsing="false" onAction="#Tab03ButtonD03Action" text="Convertir" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+										<TextField fx:id="Tab03TextFieldA03" minWidth="64.0" text="255" GridPane.rowIndex="2" />
+										<TextField fx:id="Tab03TextFieldB03" maxWidth="48.0" text="10" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+										<TextField fx:id="Tab03TextFieldC03" maxWidth="48.0" text="16" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+										<Label fx:id="Tab03LabelE03" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="192.0" style="-fx-background-color: #00000010;" text="..." wrapText="true" GridPane.columnIndex="4" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="2" GridPane.vgrow="SOMETIMES" />
+										<Label text="Base" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</GridPane>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="Tab04" text="Manipulation Date">
+					<content>
+						<AnchorPane minHeight="256.0" minWidth="128.0">
+							<children>
+								<GridPane hgap="10.0" layoutX="153.0" layoutY="101.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<columnConstraints>
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+										<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+									</rowConstraints>
+									<children>
+										<Button fx:id="Tab04ButtonC02" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC02Action" text="TimestampToSimpleDateFormat()" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+										<Button fx:id="Tab04ButtonC03" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC03Action" text="TimestampToLongMillisecond()" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+										<Button fx:id="Tab04ButtonC05" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC05Action" text="StringToTimestamp()" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+										<Button fx:id="Tab04ButtonC06" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC06Action" text="StringToLocaDateTime()" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+										<Button fx:id="Tab04ButtonC07" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC07Action" text="StringToLocaDate()" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+										<Button fx:id="Tab04ButtonC08" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC08Action" text="StringToLocaTime()" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+										<Label fx:id="Tab04LabelD02" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="1" />
+										<Label fx:id="Tab04LabelD03" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="2" />
+										<Label fx:id="Tab04LabelD05" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="4" />
+										<Label fx:id="Tab04LabelD06" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="5" />
+										<Label fx:id="Tab04LabelD07" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="6" />
+										<Label fx:id="Tab04LabelD08" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="7" />
+										<TextField fx:id="Tab04TextFieldA02" maxHeight="1.7976931348623157E308" text="2018-07-25 12:13:14" GridPane.rowIndex="1" GridPane.rowSpan="3" />
+										<TextField fx:id="Tab04TextFieldA05" maxHeight="1.7976931348623157E308" text="2018-07-25 12:13:14" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="4" />
+										<Label text="Conversion" GridPane.columnIndex="2" />
+										<Label text="Date ou Timestamp" />
+										<TextField fx:id="Tab04TextFieldB02" text="y-MM-d H:m:s" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+										<Label text="Format" GridPane.columnIndex="1" />
+										<Button fx:id="Tab04ButtonD01" minWidth="128.0" mnemonicParsing="false" onAction="#Tab04ButtonD01Action" text="Réinitialisation" GridPane.columnIndex="3" />
+										<Button fx:id="Tab04ButtonC04" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab04ButtonC04Action" text="TimestampToLongSecond()" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+										<Label fx:id="Tab04LabelD04" minWidth="192.0" text="..." GridPane.columnIndex="3" GridPane.rowIndex="3" />
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</GridPane>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="Tab05" text="Mémoire">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<GridPane hgap="10.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<columnConstraints>
+										<ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+										<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+									</columnConstraints>
+									<rowConstraints>
+										<RowConstraints minHeight="10.0" vgrow="NEVER" />
+										<RowConstraints minHeight="10.0" valignment="TOP" vgrow="SOMETIMES" />
+										<RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+									</rowConstraints>
+									<children>
+										<Button fx:id="Tab05ButtonA01" minWidth="160.0" mnemonicParsing="false" onAction="#Tab05ButtonA01Action" text="executeSystemGc()" />
+										<Button fx:id="Tab05ButtonA02" minWidth="160.0" mnemonicParsing="false" onAction="#Tab05ButtonA02Action" text="getRuntime()" GridPane.rowIndex="1" />
+										<Label fx:id="Tab05LabelB02" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="128.0" style="-fx-background-color: #00000010;" text="..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+									</children>
+									<padding>
+										<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+									</padding>
+								</GridPane>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+            <Tab fx:id="Tab06" text="MySQL">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="64.0" prefWidth="144.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="64.0" prefWidth="256.0" />
+                              <ColumnConstraints hgrow="ALWAYS" minWidth="64.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="32.0" minHeight="10.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="Tab06ButtonB01" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab06ButtonB01Action" text="Paramètres par défaut" GridPane.columnIndex="1" />
+                              <Label text="Serveur" GridPane.rowIndex="1" />
+                              <Label layoutX="10.0" layoutY="48.0" text="Identifiant" GridPane.rowIndex="2" />
+                              <Label layoutX="10.0" layoutY="78.0" text="Mot de passe" GridPane.rowIndex="3" />
+                              <Label text="BDD" GridPane.rowIndex="4" />
+                              <Label text="Options" GridPane.rowIndex="5" />
+                              <Label text="Requete SQL" GridPane.rowIndex="6" />
+                              <Button fx:id="Tab06ButtonB08" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Tab06ButtonB08Action" text="Go" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextArea fx:id="Tab06TextAreaC02" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="3" />
+                              <TextField fx:id="Tab06LabelB02" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="Tab06LabelB03" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="Tab06LabelB05" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="Tab06LabelB06" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="Tab06LabelB07" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <PasswordField fx:id="Tab06PasswordFieldB04" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TableView fx:id="Tab06TableViewC05" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.rowSpan="4" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>
